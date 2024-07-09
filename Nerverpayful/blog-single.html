@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog single</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/scss/index.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width: 100px;"></a>
+            <div class="d-flex gap-2 order-lg-last">
+                <button class="navbar-toggler order-4 order-md-0 order-lg-1 form-control shadow-none border-0 p-0"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex" role="search">
+                    <div class="dropdown" style="float:right;">
+                        <button class="dropbtn"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #f95669;"></i></button>
+                        <div class="dropdown-content ps-md-0 ps-4" id="content-menu">
+                            <div class="input-group m-3 p-3 mx-md-auto bg-white">
+                                <input class="form-control border rounded shadow-none" type="search"
+                                    onkeyup="search(this)" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary border"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <div
+                                    class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 end-0">
+                                    <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse text-center order-last order-0 order-md-1 order-lg-0"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" aria-current="page"
+                            href="/"><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links"
+                            href="all-categories.html"><span>Categories</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="all-stores.html">
+                            <span>Stores</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="blog-section.html">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- <form class="d-lg-none d-flex w-75 mx-auto" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4" placeholder="Search">
+                        <button class="btn btn-primary border"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form> -->
+
+
+
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Blog Section Start -->
+    <main style="background-color: #f8f9fa;" class="py-1">
+        <section class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="p-4 bg-light shadow text-lg-start text-center mb-5">
+                        <h3>
+                            <span>Wear Your Signature Scent With Riddle</span>
+                        </h3>
+                        <p>
+                            by
+                            <a href="#" class="store-links"> <span class="me-2">Lisa Donlan</span></a>
+                            2024-06-01 20
+                        </p>
+                        <a><img src="assets/images/riddle2.png" alt="" class="w-100 img-fluid object-fit-cover"></a>
+
+
+                        <p class="py-4">
+                            Ever feel like life’s moving on a fast-forward track? Working deadlines, endless chores and
+                            the daily grind – it’s easy to lose yourself in the chaos. But what if there was a secret
+                            weapon to reconnect with inner peace, right at home? Perfume oils! These age-old aromas
+                            offer a simple way to unwind and find your calm again.
+                        </p>
+                        <div class="py-3">
+                            <h1>
+                                Roll-on Scents for every mood
+                            </h1>
+                            <p>Are you tired of the same old perfumes? Craft your aromas with high-quality,
+                                safe-for-skin
+                                lubricants. Love woodsy notes? Into florals? Craving something spicy? They have
+                                everything
+                                to personalize your perfumes. Their roll-on perfumes are like confidence in a bottle,
+                                letting you write your unique fragrance story.
+                            </p>
+
+                        </div>
+                        <div class="py-3">
+                            <h1>
+                                Mood uplifting scents
+                            </h1>
+                            <p>
+                                Level up your natural perfume game with pheromones! These rollerball perfumes work with
+                                your
+                                unique body chemistry to create an irresistible odor just like scent boosters
+                            </p>
+                        </div>
+
+                        <!-- Section: Social media -->
+                        <section class="blog-social-icon py-3">
+
+                            <h6 class="text-uppercase fw-bold mb-4 ">Social Links</h6>
+                            <div class="d-flex justify-content-center justify-content-xl-start mb-4 flex-wrap">
+
+                                <!-- Facebook -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-facebook-f py-2 px-1"></i></a>
+                                <!-- Twitter -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-twitter py-2"></i></a>
+                                <!-- Google -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-google py-2"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-instagram py-2"></i></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-linkedin-in py-2"></i></a>
+                                <!-- Github -->
+                                <a class="btn btn-outline-primary border rounded-circle btn-floating m-1" href="#!"
+                                    role="button"><i class="fab fa-github py-2"></i></a>
+                            </div>
+
+                        </section>
+                        <!-- Section: Social media -->
+
+
+                    </div>
+                    <section>
+                        <div class="bg-white p-4 shadow text-center text-md-start">
+                            <h5 class="fw-normal">
+                                Leave A Comment
+                            </h5>
+                            <div class="row jus">
+                                <div class="col-12 form-floating">
+                                    <span for="floatingTextarea2" class="py-2">Message</span>
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 200px"></textarea>
+                                </div>
+                                <div class="col-lg-6 col-12 py-2">
+                                    <label for="floatingInputGrid" class="py-2">Name</label>
+                                    <input class="form-control py-2" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6 col-12 py-2">
+                                    <label for="floatingInputGrid" class="py-2">Email address</label>
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="name@example.com" value="mdo@example.com">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary my-3 fw-bold ">Leave Comment</button>
+                        </div>
+                    </section>
+                </div>
+                <!-- Right Side -->
+                <div class="col-lg-3 col-md-10 col-12">
+                    <div class="p-4 bg-light shadow">
+                        <h5>
+                            Popular In Deals
+                        </h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="" class="w-100 img-fluid"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="" class="w-100 img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Blog Section End -->
+
+    <!-- Categories Start -->
+    <main class="container mx-auto px-md-5">
+        <section class="pt-5 px-md-5 text-center">
+            <div class="mt-5">
+                <h2 class="fw-normal text-center">
+                    All Categories
+                </h2>
+                <div class="d-flex justify-content-center align-items-center pt-2 pb-4">
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                    <div style="border-bottom: 5px solid #f95669; width: 40px;">
+                    </div>
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row list-unstyled py-4">
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="text-center my-5">
+                <a href="all-categories.html" class="btn btn-primary fw-bold p-5 py-1 text-uppercase">
+                    <h6 class="mt-2 fw-bold">All Categories </h6>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Categories End -->
+
+    <!-- Newsletter Start -->
+    <main class="bg-danger py-4">
+        <section class="container col-xl-8 col-lg-12 col-md-8 col-12">
+            <h1 class="text-light text-center fs-1 col-xl-6 col-lg-10 col-md-12 col-12 mx-auto">Get notified when new
+                coupons are released
+            </h1>
+
+            <div class="container">
+                <div class="d-flex px-lg-5 mx-auto pt-5" role="search">
+                    <div class="input-group px-lg-5 mx-lg-5">
+                        <input type="text" class="form-control p-lg-3" id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4" placeholder="Search">
+                        <button class="btn btn-primary border-0 fs-6 fs-md-5 px-lg-4 px-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Newsletter End -->
+
+    <!-- Popular Stores Start -->
+    <main class="container mx-auto px-md-5">
+        <section class="pt-5 px-md-5 text-center">
+            <div class="mt-5">
+                <h2 class="fw-normal text-center">
+                    Popular Stores
+                </h2>
+                <div class="d-flex justify-content-center align-items-center pt-2 pb-4">
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                    <div style="border-bottom: 5px solid #f95669; width: 40px;">
+                    </div>
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row list-unstyled py-4">
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <button class="btn btn-primary fw-bold p-5 py-1 text-uppercase">
+                    <h6 class="mt-2 fw-bold">All Stores </h6>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Popular Stores End -->
+
+
+    <!-- Footer Start-->
+    <footer class="text-center text-lg-start bg-secondary text-white">
+        <!-- Section: Links  -->
+        <section class="py-5">
+            <div class="container text-center text-xl-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="assets/images/logo.png" alt="Logo" style="width: 120px;">
+                        </h6>
+                        <p>No 1 Deals and coupons website on internet. Fitskinbeauty give full support of coupons to its
+                            customers wherever and whenever they need.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Categories column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                    </div>
+                    <!-- Categories column -->
+
+                    <!-- More Links column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">More Links</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>About Us</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Terms & Conditions</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Impressum</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Privacy Policy</span></a></p>
+                    </div>
+                    <!-- More Links column -->
+
+                    <!-- Social Links column -->
+                    <div class="col-md-12 col-lg-12 col-xl-4 mb-md-0 mb-4">
+                        <!-- Section: Social media -->
+                        <h6 class="text-uppercase fw-bold mb-4 ">Social Links</h6>
+                        <section class="d-flex justify-content-center justify-content-xl-start mb-4 flex-wrap">
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-facebook-f py-2 px-1"></i></a>
+                            <!-- Twitter -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light " href="#!" role="button"><i
+                                    class="fab fa-twitter py-2"></i></a>
+                            <!-- Google -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-google py-2"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-instagram py-2"></i></a>
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-linkedin-in py-2"></i></a>
+                            <!-- Github -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-github py-2"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Social Links column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright <a href="#" class="text-reset fw-bold">Fitskinbeauty</a>. Contact info@Fitskinbeauty.com
+            <p>Disclosure: We may earn commission if you use our links/Coupons.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer End-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+
+</html>

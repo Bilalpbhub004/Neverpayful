@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- /* Coupon Button */ -->
+    <style>
+        .deal-item .media .media-body ul li a {
+            color: #848484;
+        }
+
+        .btn-dual {
+            padding: 8px 0;
+            border: 1px solid #f95669;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn {
+            font-size: 15px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 3px;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.25;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        .btn-dual .upper {
+            background: #f95669;
+            color: #fff;
+            font-size: 11px;
+            letter-spacing: 1px;
+            padding: 12px 13px 12px 15px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 100;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .btn-dual .upper:after {
+            position: absolute;
+            right: -30px;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 43px 0 0 30px;
+            border-color: transparent transparent transparent #f95669;
+            z-index: 101;
+            content: '';
+            transition: .2s ease;
+        }
+
+        .btn-dual .lower {
+            background: 0 0;
+            padding: 10px 10px;
+            text-transform: uppercase;
+            color: #000;
+            position: relative;
+            z-index: 99;
+            margin-left: -44px;
+        }
+
+        .btn-dual .upper:hover:after {
+            right: -20px;
+            border-width: 44px 0 0 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <li class="list-inline-item">
+        <a href="javascript:void(0)" class="btn btn-dual fw-bold">
+            <span class="upper">Copy &amp; Visit</span>
+            <span class="lower">LOVE50</span>
+        </a>
+    </li>
+</body>
+
+</html>

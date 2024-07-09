@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- /* Carousel Start */ -->
+    <style>
+        .main-body {
+            margin: 50px 0;
+            padding: 30px;
+        }
+
+        .contain {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .item {
+            margin: 0 auto;
+            align-items: center;
+            color: darkblue;
+            display: flex;
+            height: 200px;
+            width: 150px;
+            justify-content: center;
+        }
+
+
+        /* Carousel End */
+    </style>
+</head>
+
+<body>
+    <!-- Carousel Start -->
+    <main>
+        <section>
+            <div class="main-body">
+                <div class="contain">
+                    <div id="owl-carousel" class="owl-carousel owl-theme ">
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Carousel End -->
+
+    <!-- Carousel JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var owlCarousel = $('#owl-carousel');
+            owlCarousel.owlCarousel({
+                loop: true,
+                margin: 30,
+                dots: false,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    576: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/scss/index.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width: 100px;"></a>
+            <div class="d-flex gap-2 order-lg-last">
+                <button class="navbar-toggler order-4 order-md-0 order-lg-1 form-control shadow-none border-0 p-0"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex" role="search">
+                    <div class="dropdown" style="float:right;">
+                        <button class="dropbtn"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #f95669;"></i></button>
+                        <div class="dropdown-content ps-md-0 ps-4" id="content-menu">
+                            <div class="input-group m-3 p-3 mx-md-auto bg-white">
+                                <input class="form-control border rounded shadow-none" type="search"
+                                    onkeyup="search(this)" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary border"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <div
+                                    class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 end-0">
+                                    <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse text-center order-last order-0 order-md-1 order-lg-0"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" aria-current="page"
+                            href="/"><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links"
+                            href="all-categories.html"><span>Categories</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="all-stores.html">
+                            <span>Stores</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="blog-section.html">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- <form class="d-lg-none d-flex w-75 mx-auto" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4" placeholder="Search">
+                        <button class="btn btn-primary border"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form> -->
+
+
+
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <main class="hero-section">
+        <section class="row container mx-auto align-items-center my-auto h-75">
+            <div class="text-center mt-5 pt-5">
+
+                <h1>Best Deals & Promotions</h1>
+
+                <h4 class="text-center">
+                    We have 12569 offers from 6122 stores <br>
+                    Start saving now
+                </h4>
+            </div>
+
+
+        </section>
+    </main>
+    <!-- Hero Section End -->
+
+    <!-- Carousel Start -->
+    <main>
+        <section>
+            <div class="main-body">
+                <div class="contain">
+                    <div id="owl-carousel" class="owl-carousel owl-theme ">
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/images/kontidor.png" alt="img" class="object-fit-cover img-fluid shadow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Carousel End -->
+
+    <!-- Deals Section Start -->
+    <main>
+        <section class="my-2 container">
+            <h2 class="fw-normal text-center">
+                Today's Popular Deals
+            </h2>
+            <div class="d-flex justify-content-center align-items-center pt-2 pb-4">
+                <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;"></div>
+                <div style="border-bottom: 5px solid #f95669; width: 40px;"></div>
+                <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;"></div>
+            </div>
+
+            <div class="row g-4 my-5">
+                <div class="col-lg-6 col-md-12 col-12 mx-auto">
+                    <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0">
+                        <div class="mx-auto mx-md-0 p-2" style="width: 11rem;">
+                            <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded" alt="..." style="width: 1500;"></a>
+                        </div>
+                        <div class="p-3 p-xl-4 p-lg-0">
+                            <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start pt-3 pt-md-5 pt-lg-0 pt-xl-5">
+                                <li class="list-inline-item">
+                                    <a href="javascript:void(0)" class="btn btn-dual">
+                                        <span class="upper">Copy &amp; Visit</span>
+                                        <span class="lower">LOVE50</span>
+                                    </a>
+                                </li>
+                                <p class="text-secondary ms-3 mt-3 mt-md-0">Expire on 2026-12-31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-10 mx-auto">
+                    <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0">
+                        <div class="mx-auto mx-md-0 p-2" style="width: 11rem;">
+                            <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded" alt="..."></a>
+                        </div>
+                        <div class="p-3 p-xl-4 p-lg-0">
+                            <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start pt-3 pt-md-5 pt-lg-0 pt-xl-5">
+                                <li class="list-inline-item">
+                                    <a href="javascript:void(0)" class="btn btn-dual">
+                                        <span class="upper">Copy &amp; Visit</span>
+                                        <span class="lower">LOVE50</span>
+                                    </a>
+                                </li>
+                                <p class="text-secondary ms-3 mt-3 mt-md-0">Expire on 2026-12-31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-10 mx-auto">
+                    <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0">
+                        <div class="mx-auto mx-md-0 p-2" style="width: 11rem;">
+                            <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded" alt="..."></a>
+                        </div>
+                        <div class="p-3 p-xl-4 p-lg-0">
+                            <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start pt-3 pt-md-5 pt-lg-0 pt-xl-5">
+                                <li class="list-inline-item">
+                                    <a href="javascript:void(0)" class="btn btn-dual">
+                                        <span class="upper">Copy &amp; Visit</span>
+                                        <span class="lower">LOVE50</span>
+                                    </a>
+                                </li>
+                                <p class="text-secondary ms-3 mt-3 mt-md-0">Expire on 2026-12-31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-10 mx-auto">
+                    <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0">
+                        <div class="mx-auto mx-md-0 p-2" style="width: 11rem;">
+                            <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded" alt="..."></a>
+                        </div>
+                        <div class="p-3 p-xl-4 p-lg-0">
+                            <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start pt-3 pt-md-5 pt-lg-0 pt-xl-5">
+                                <li class="list-inline-item">
+                                    <a href="javascript:void(0)" class="btn btn-dual">
+                                        <span class="upper">Copy &amp; Visit</span>
+                                        <span class="lower">LOVE50</span>
+                                    </a>
+                                </li>
+                                <p class="text-secondary ms-3 mt-3 mt-md-0">Expire on 2026-12-31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary fw-bold px-md-5 py-1 text-uppercase">
+                    <h5 class="mt-2">Browse All Stores</h5>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Deals Section End -->
+
+    <!-- Categories Start -->
+    <main class="container mx-auto px-md-5">
+        <section class="pt-5 px-md-5 text-center">
+            <div class="mt-5">
+                <h2 class="fw-normal text-center">
+                    All Categories
+                </h2>
+                <div class="d-flex justify-content-center align-items-center pt-2 pb-4">
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                    <div style="border-bottom: 5px solid #f95669; width: 40px;">
+                    </div>
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row list-unstyled py-4">
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="text-center my-5">
+                <a href="all-categories.html" class="btn btn-primary fw-bold p-5 py-1 text-uppercase">
+                    <h6 class="mt-2 fw-bold">All Categories </h6>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Categories End -->
+
+    <!-- Newsletter Start -->
+    <main class="bg-danger py-4">
+        <section class="container col-xl-8 col-lg-12 col-md-8 col-12">
+            <h1 class="text-light text-center fs-1 col-xl-6 col-lg-10 col-md-12 col-12 mx-auto">Get notified when new
+                coupons are released
+            </h1>
+
+            <div class="container">
+                <div class="d-flex px-lg-5 mx-auto pt-5" role="search">
+                    <div class="input-group px-lg-5 mx-lg-5">
+                        <input type="text" class="form-control p-lg-3" id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4" placeholder="Search">
+                        <button class="btn btn-primary border-0 fs-6 fs-md-5 px-lg-4 px-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Newsletter End -->
+
+    <!-- Popular Stores Start -->
+    <main class="container mx-auto px-md-5">
+        <section class="pt-5 px-md-5 text-center">
+            <div class="mt-5">
+                <h2 class="fw-normal text-center">
+                    All Categories
+                </h2>
+                <div class="d-flex justify-content-center align-items-center pt-2 pb-4">
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                    <div style="border-bottom: 5px solid #f95669; width: 40px;">
+                    </div>
+                    <div style="border-bottom: 2px solid rgb(196, 187, 187); width: 40px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row list-unstyled py-4">
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 my-3">
+                    <a href="#" class="text-secondary store-links">
+                        <span>
+                            Health and Beauty
+                        </span>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="text-center my-5">
+                <button class="btn btn-primary fw-bold p-5 py-1 text-uppercase">
+                    <h6 class="mt-2 fw-bold">All Categories </h6>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Popular Stores End -->
+
+    <!-- Footer Start-->
+    <footer class="text-center text-lg-start bg-secondary text-white">
+        <!-- Section: Links  -->
+        <section class="py-5">
+            <div class="container text-center text-xl-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="assets/images/logo.png" alt="Logo" style="width: 120px;">
+                        </h6>
+                        <p>No 1 Deals and coupons website on internet. Fitskinbeauty give full support of coupons to its
+                            customers wherever and whenever they need.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Categories column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                    </div>
+                    <!-- Categories column -->
+
+                    <!-- More Links column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">More Links</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>About Us</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Terms & Conditions</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Impressum</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Privacy Policy</span></a></p>
+                    </div>
+                    <!-- More Links column -->
+
+                    <!-- Social Links column -->
+                    <div class="col-md-12 col-lg-12 col-xl-4 mb-md-0 mb-4">
+                        <!-- Section: Social media -->
+                        <h6 class="text-uppercase fw-bold mb-4 ">Social Links</h6>
+                        <section class="d-flex justify-content-center justify-content-xl-start mb-4 flex-wrap">
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-facebook-f py-2 px-1"></i></a>
+                            <!-- Twitter -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light " href="#!" role="button"><i
+                                    class="fab fa-twitter py-2"></i></a>
+                            <!-- Google -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-google py-2"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-instagram py-2"></i></a>
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-linkedin-in py-2"></i></a>
+                            <!-- Github -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-github py-2"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Social Links column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright <a href="#" class="text-reset fw-bold">Fitskinbeauty</a>. Contact info@Fitskinbeauty.com
+            <p>Disclosure: We may earn commission if you use our links/Coupons.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer End-->
+
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 750px;"> <!-- Adjust width as needed -->
+            <div class="modal-content rounded-5" style="background-color: #f95669; height: 250px;">
+                <!-- Adjust height as needed -->
+                <div class="modal-body col-lg-10 col-12 mx-auto">
+                    <h2 class="modal-title text-center text-light fw-bold pt-md-4" id="exampleModalLabel">Stay in the
+                        loop
+                        with Neverpayful</h2>
+                    <h5 class="text-center text-light">Sign up for top notch shopping advice</h5>
+                    <div class="input-group mt-4 mb-5 rounded-pill bg-light border">
+                        <input type="text" class="form-control rounded-start-pill" placeholder=" Email Address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary px-md-4 py-md-2 px-1 rounded-end-pill" type="button"
+                            id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>

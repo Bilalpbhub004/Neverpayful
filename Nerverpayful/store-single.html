@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store single</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/scss/index.css">
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width: 100px;"></a>
+            <div class="d-flex gap-2 order-lg-last">
+                <button class="navbar-toggler order-4 order-md-0 order-lg-1 form-control shadow-none border-0 p-0"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-flex" role="search">
+                    <div class="dropdown" style="float:right;">
+                        <button class="dropbtn"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #f95669;"></i></button>
+                        <div class="dropdown-content ps-md-0 ps-4" id="content-menu">
+                            <div class="input-group m-3 p-3 mx-md-auto bg-white">
+                                <input class="form-control border rounded shadow-none" type="search"
+                                    onkeyup="search(this)" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-primary border"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                                <div
+                                    class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 end-0">
+                                    <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="text-dark text-decoration-none">
+                                                <div class="d-flex flex-row">
+                                                    <img src="assets/images/shopping_cart.webp"
+                                                        class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                        height="100" width="120" alt="">
+                                                    <div class="overflow-hidden d-flex align-items-center">
+                                                        <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                            Holiday shopping Holiday shopping
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse text-center order-last order-0 order-md-1 order-lg-0"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" aria-current="page"
+                            href="/"><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links"
+                            href="all-categories.html"><span>Categories</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="all-stores.html">
+                            <span>Stores</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-dark fw-bold store-links" href="blog-section.html">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- <form class="d-lg-none d-flex w-75 mx-auto" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="basic-url"
+                            aria-describedby="basic-addon3 basic-addon4" placeholder="Search">
+                        <button class="btn btn-primary border"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form> -->
+
+
+
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Store Section Start -->
+    <main class="store-section py-1" style="background-color: #f6f8fa">
+        <section class="container">
+            <div class="row p-lg-5 p-2 g-md-5 flex-wrap justify-content-center">
+                <!-- Left Side -->
+                <div class="col-lg-9 col-md-10 col-12">
+
+                    <div class="p-md-4 p-2 bg-white shadow rounded">
+                        <h3 class="fw-normal">Talentless Coupons & Promo Codes Jul 2024
+                        </h3>
+                        <p>
+                            Talentless is an homage to the new wave of creators, innovators, and influencers who`ve made
+                            a name for themselves by going against the conventions of what it means to be “talented."WE
+                            MUST BE DOING SOMETHING RIGHT.
+                        </p>
+                    </div>
+
+                    <!-- Nav & Tabs Section Start-->
+                    <ul class="nav nav-tabs my-3 border-bottom-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link btn-primary fw-bold rounded px-2" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-selected="true">All
+                                Offers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link btn-primary px-2 rounded fw-bold" id="profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Coupon Code</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link btn-primary px-2 rounded fw-bold" id="contact-tab"
+                                data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Deals</button>
+                        </li>
+
+                    </ul>
+                    <!-- Nav & Tabs Section End-->
+
+                    <!-- Tabs Section Start-->
+                    <div class="tab-content" id="myTabContent">
+                        <!-- All Stores Tabs -->
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 bg-white my-4">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded"
+                                            alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-2">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center  list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-lg-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-success text-center text-md-start">
+                                                <i class="fa-solid fa-circle-check"></i> Verified
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-dual text-center" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <span class="upper fw-bold">Copy & Visit</span>
+                                                <span class="lower">LOVE50</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 bg-white my-4">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded"
+                                            alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-2">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center  list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-lg-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-success text-center text-md-start">
+                                                <i class="fa-solid fa-circle-check"></i> Verified
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-dual text-center">
+                                                <span class="upper fw-bold">Copy & Visit</span>
+                                                <span class="lower">LOVE50</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 bg-white my-4">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded"
+                                            alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-2">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center  list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-lg-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-success text-center text-md-start">
+                                                <i class="fa-solid fa-circle-check"></i> Verified
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-outline-danger text-center border-danger mx-md-4 px-4">
+                                                <span class="fw-bold">Get Deal</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- All Coupons Tabs -->
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 bg-white my-4">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded"
+                                            alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-2">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-lg-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-success text-center text-md-start">
+                                                <i class="fa-solid fa-circle-check"></i> Verified
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-dual text-center" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <span class="upper fw-bold">Copy & Visit</span>
+                                                <span class="lower">LOVE50</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- All Deals Tabs -->
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 bg-white my-4">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a href="#"><img src="assets/images/kontidor.png" class="img-fluid rounded"
+                                            alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-2">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-md-between justify-content-center  list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-lg-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-success text-center text-md-start">
+                                                <i class="fa-solid fa-circle-check"></i> Verified
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-outline-danger text-center border-danger mx-md-4 px-4"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <span class="fw-bold">Get Deal</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expire Coupons Start-->
+                        <div class="p-3 bg-info-subtle">
+                            <h5>Expired Coupons</h5>
+                            <div class="d-flex flex-wrap flex-md-nowrap shadow p-3 p-md-0 my-4"
+                                style="background-color: #e0dfe1;">
+                                <div class="mx-auto mx-md-0 p-2 text-center" style="width: 11rem;">
+                                    <a><img src="assets/images/kontidor.png" class="img-fluid rounded" alt="..."></a>
+                                    <span class="">Coupon</span>
+                                </div>
+                                <div class="w-100 p-3 p-xl-4 p-lg-0">
+                                    <h4 class="fw-normal text-center text-md-start">Free Shipping on order over $35</h4>
+                                    <div
+                                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between  list-unstyled">
+
+
+
+                                        <li class="text-secondary pt-3">
+                                            <p>
+                                                Expire on 2026-12-31
+                                            </p>
+                                            <p class="text-danger">
+                                                <i class="fa-solid fa-circle-xmark"></i> Expired
+                                            </p>
+                                        </li>
+
+                                        <li class="list-inline-item "> <a href="javascript:void(0)"
+                                                class="btn btn-dual disabled border-0">
+                                                <span class="upper fw-bold">Copy & Visit</span>
+                                                <span class="lower">LOVE50</span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Expire Coupons End-->
+                    </div>
+                    <!-- Tabs Section End-->
+
+                    <!-- Store Description Start -->
+                    <section>
+                        <div class="p-4 bg-white my-4 shadow rounded">
+                            <h6 class="fw-normal">
+                                More About Talentless
+                            </h6>
+                            <hr>
+                            <p>
+                                Talentless is an homage to the new wave of creators, innovators, and influencers who`ve
+                                made a name for themselves by going against the conventions of what it means to be
+                                “talented."WE MUST BE DOING SOMETHING RIGHT.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- Store Description End -->
+
+                </div>
+                <!-- Right Side -->
+                <div class="col-lg-3 col-md-10 col-12">
+
+                    <div class="p-4 bg-white text-center shadow rounded ">
+                        <img src="assets/images/kontidor.png" alt="img"
+                            class="rounded-circle img-fluid object-fit-cover" style="width: 150px;">
+                    </div>
+
+                    <div class="my-lg-4 my-5 p-3 bg-white text-start shadow rounded ">
+                        <h5 class="fw-normal">
+                            Share Talentless Coupons
+                            <hr>
+                        </h5>
+                    </div>
+                    <div class=" my-4 p-3 bg-white text-start shadow rounded ">
+                        <h5 class="fw-normal">
+                            Related Store
+                            <hr>
+                        </h5>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="img" class="img-fluid w-100"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="img" class="img-fluid w-100"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="img" class="img-fluid w-100"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="assets/images/kontidor.png" alt="img" class="img-fluid w-100"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Store Section End -->
+
+    <!-- Footer Start-->
+    <footer class="text-center text-lg-start bg-secondary text-white">
+        <!-- Section: Links  -->
+        <section class="py-5">
+            <div class="container text-center text-xl-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="assets/images/logo.png" alt="Logo" style="width: 120px;">
+                        </h6>
+                        <p>No 1 Deals and coupons website on internet. Fitskinbeauty give full support of coupons to its
+                            customers wherever and whenever they need.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Categories column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Health and Beauty</span></a></p>
+                    </div>
+                    <!-- Categories column -->
+
+                    <!-- More Links column -->
+                    <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">More Links</h6>
+                        <p><a href="#!" class="store-links text-reset"><span>About Us</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Terms & Conditions</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Impressum</span></a></p>
+                        <p><a href="#!" class="store-links text-reset"><span>Privacy Policy</span></a></p>
+                    </div>
+                    <!-- More Links column -->
+
+                    <!-- Social Links column -->
+                    <div class="col-md-12 col-lg-12 col-xl-4 mb-md-0 mb-4">
+                        <!-- Section: Social media -->
+                        <h6 class="text-uppercase fw-bold mb-4 ">Social Links</h6>
+                        <section class="d-flex justify-content-center justify-content-xl-start mb-4 flex-wrap">
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-facebook-f py-2 px-1"></i></a>
+                            <!-- Twitter -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light " href="#!" role="button"><i
+                                    class="fab fa-twitter py-2"></i></a>
+                            <!-- Google -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-google py-2"></i></a>
+                            <!-- Instagram -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-instagram py-2"></i></a>
+                            <!-- Linkedin -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-linkedin-in py-2"></i></a>
+                            <!-- Github -->
+                            <a class="btn btn-primary rounded-5 btn-floating m-1 text-light" href="#!" role="button"><i
+                                    class="fab fa-github py-2"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Social Links column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright <a href="#" class="text-reset fw-bold">Fitskinbeauty</a>. Contact info@Fitskinbeauty.com
+            <p>Disclosure: We may earn commission if you use our links/Coupons.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer End-->
+
+
+    <!-- Modal Start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Built Bar Coupons & Promo Codes Jun
+                        2024</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="p-lg-2 p-3">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <div class="text-center">
+                                    <div class="text-center">
+                                        <img src="assets/images/kontidor.png" alt="img"
+                                            class="img-fluid object-fit-cover col-lg-4 col-md-6">
+                                    </div>
+
+                                    <button class="btn btn-secondary my-2 w-25">Visit Store</button>
+                                    <div>
+                                        <p class="text-center">Get 20% Off Sitewide</p>
+                                        <p class="text-center">Copy and Paste Code At Checkout</p>
+                                    </div>
+
+
+                                    <h5 class="text-center">Code: Get10</h5>
+                                    <button class="btn btn-primary rounded fw-bold px-5">Copy Code
+                                    </button>
+
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal End-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/carousel.js"></script>
+</body>
+
+</html>
